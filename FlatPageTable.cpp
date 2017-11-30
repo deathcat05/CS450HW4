@@ -18,6 +18,6 @@ FPTable::FPTable(int valid, int permission, int ppn)
   int _ppn = ppn;
   int valid_index = 0;
   int permission_index = 1;
-  // missing the ppn index -> is it more than 1 bit/indedx?
-  int ppn_index; // doesn't have a value set here need to do that
+  int ppn_index = 2;
+  int use_bit_index = 3; 
 }
