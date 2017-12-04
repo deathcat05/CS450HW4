@@ -5,10 +5,13 @@
 #include <cmath> 
 #include <fstream>
 #include <cstring>
+#include <string>
 //#include "FlatPageTable.hpp"
 using namespace std; 
 int main(int argc, char *argv[]) 
 {
+
+//FPTable *aTable = new FPTable; 
 
 string fileName;
 ifstream inFile; 
@@ -20,8 +23,19 @@ if(!inFile.is_open())
 }	
 else
 {
-	cout << "The file was opened successfully" << endl;		
+string vAddSize; 
+string  pAddSize;
+string pageSize; 
+char delimiter = ' ';
+	while(inFile.is_open())
+	{	
+		getline(inFile, vAddSize, delimiter);
+		cout << stoi(vAddSize) << endl;
+		if(EOF)
+		break;  
+	}		
 }
-  return 0;
+  inFile.close(); 
+	return 0;
 
 }
