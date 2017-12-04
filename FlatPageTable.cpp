@@ -1,6 +1,6 @@
 #include<iomanip> // for setw if needed
 #include<iostream>
-#include "FlatePageTable.hpp"
+#include "FlatPageTable.hpp"
 
 // my assumption here is that each array will be size 4
 // so I'm going to set a const variable to 4 for the size

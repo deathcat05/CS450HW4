@@ -24,6 +24,6 @@ private:
   int _valid, _permission, _ppn; // set by the constructor        
   int valid_index, permission_index, ppn_index, used_bit_index; // holds indices not sure about ppn
   std::queue <fpTable*> fptQ; // a queue that holds the FPT arrays
-}
+};
 
 #endif
